@@ -1,0 +1,11 @@
+baseURL = "/"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Example Document with Hugo"
+publishDir = "../docs"
+relativeURLs = true
+uglyurls = true
+theme = "docdock"
+
+[params]
+themeVariant = "gray"
