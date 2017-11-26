@@ -77,6 +77,11 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i>
       </a>
         <ul>
+      <li data-nav-id="/posts/how-to-use-hugo.html" class="dd-item">
+        <a href="./posts/how-to-use-hugo.html">
+          <span>How to Use Hugo</span>
+        </a>
+    </li>
       <li data-nav-id="/posts/first-document.html" class="dd-item">
         <a href="./posts/first-document.html">
           <span>First Document</span>
@@ -162,6 +167,36 @@
 
    <article class="post posts">
     <header class="post-header">
+        <h2 class="post-title"><a href="./posts/how-to-use-hugo.html">How to Use Hugo</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Hugoの使い方 OfficialのQuick Start通りでサクッとできます。
+Go言語一切知らなくてもできます。
+便利です。
+インストールと起動(Macの場合) $ brew install Hugo  しておもむろに任意のディレクトリで
+$ hugo new site .  するだけで準備は完了です。
+注意点としては、このディレクトリはGitで管理しておくと便利で、またテーマを追加しないとただの真っ白なページが表示されて焦ることになります(なりました)。
+テーマをGitのsubmoduleとして追加するには以下のようにします。
+( hugo-theme-docdock テーマを使うとこのサイトと同じような見た目になります)
+$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock  config.toml に以下の行を追記します。
+theme = &quot;docdock&quot;  その後ローカルでHugoのサーバーを起動し表示を確認します。
+Web Server is available at に書かれているURLにアクセスすると表示が確認できます。
+便利ですね。
+なお -D または --buildDrafts はdraftなPostも表示するオプションです、たぶん。
+$ hugo server -D Started building sites ... Built site for language en: 2 of 2 drafts rendered 0 future content 0 expired content 3 regular pages created 8 other pages created 0 non-page files copied 1 paginator pages created 0 tags created 0 categories created total in 8 ms Watching for changes in /path/to/your/working/directory/{data,content,layouts,static,themes} Serving pages from memory Running in Fast Render Mode. <a class="read-more" href="./posts/how-to-use-hugo.html">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post posts">
+    <header class="post-header">
         <h2 class="post-title"><a href="./posts/first-document.html">First Document</a></h2>
     </header>
     <section class="post-excerpt">
@@ -199,7 +234,7 @@
 
 <div id="navigation">
 <a class="nav nav-prev" href="./" title="Example Document with Hugo"> <i class="fa fa-chevron-left"></i></a>
-    <a class="nav nav-next" href="./posts/first-document.html" title="First Document" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="./posts/how-to-use-hugo.html" title="How to Use Hugo" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a></div>
 
 </section>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
