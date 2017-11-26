@@ -92,7 +92,7 @@ date: 2017-11-26T23:02:25+09:00
 
 なおこの記事もHugoの1つのPostですが[Markdown形式のソースはここ](https://github.com/mazgi/example-document-with-hugo/blob/master/docs.source/content/posts/how-to-use-hugo.md)にあります(予定)。
 
-## GitHub Pagesとして公開するだけで
+## GitHub Pagesとして公開する
 
 Postのファイルから以下の行を削ります。  
 ( `false` に変えてもいいんでしょう、きっと)
